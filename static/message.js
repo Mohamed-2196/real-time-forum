@@ -107,9 +107,10 @@ messagesDiv.appendChild(messageElement);
        data = JSON.parse(event.data);
              if (data && data.froms==\`${recipient}\`) {
                      if (data.typing) {
-            typingGif.style.display = 'inline';
+            typingGif.style.display = 'block';
              typingWriter.textContent = \`${recipient}\`
-             typingWriter.style.display = 'inline';
+
+            typingWriter.style.display = 'block';
         } else {
             typingWriter.style.display = 'none';
             typingGif.style.display = 'none';

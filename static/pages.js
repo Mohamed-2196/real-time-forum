@@ -3138,10 +3138,10 @@ async function privateChat (to) {
 
 
 <body>
+<img id="typing-gif" src="https://media.baamboozle.com/uploads/images/228242/1617734618_18622_gif-url.gif" alt="Chat GIF" style="width: 100px; display:none; top: 60px; position: absolute; height: auto; margin-left: 10px; vertical-align: middle;">
+<span id="typing-writer" style="width: 100px; display:none; top: 150px; position: absolute; height: auto; margin-left: 10px; vertical-align: middle;"></span>
     <div id="chat-section">
         <h1>Private Chat</h1>
-        <img id="typing-gif" src="https://media.baamboozle.com/uploads/images/228242/1617734618_18622_gif-url.gif" alt="Chat GIF" style="width: 100px; display:none; top: 80px; position: absolute; height: auto; margin-left: 10px; vertical-align: middle;">
-            <span id="typing-writer" style="display: none; margin-left: 5px;"></span>
 
         <div id="chat-window">
             <div id="messages"></div>
