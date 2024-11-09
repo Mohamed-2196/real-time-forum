@@ -55,6 +55,8 @@ func history(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error retrieving messages", http.StatusInternalServerError)
 		return
 	}
+
+
 if limit < len(messages) {
 	messages = messages[len(messages)-limit:]
 }
@@ -90,7 +92,6 @@ func Chat(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer conn.Close()
-
 	mu.Lock()
 	clients[conn] = username
 	mu.Unlock()
