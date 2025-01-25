@@ -1,66 +1,98 @@
-# FORUM
+# **CosmicForum: A Space-Themed Forum** 🌌🚀
 
-## Description
+CosmicForum is a **space-themed forum** designed for space enthusiasts to connect, share ideas, and discuss topics related to the cosmos. This project builds on the foundations of a traditional forum but adds a **space-themed twist** to create a unique and immersive experience. With features like **user registration and login**, **post creation**, **commenting**, and **real-time private messaging**, CosmicForum brings space lovers together in a dynamic and interactive environment.
 
-This project involves creating a web-based forum that facilitates communication
-between users, categorization of posts, and interaction through likes and
-dislikes. The forum also features post filtering and user authentication.
+---
 
-## Features
+## **Features** ✨
 
-- Post Creation: Registered users can create posts and associate them with one
-  or more categories.
-- Commenting: Registered users can comment on posts.
-- Visibility: Posts and comments are visible to all users, including
-  non-registered visitors.
-- Users can associate categories with posts, allowing organization and filtering
-  of content.
-- Interaction: Registered users can like or dislike posts and comments.
-- Categories: Filter posts by category.
+1. **Registration and Login** 🔐:
+   - Users can register by providing:
+     - Nickname
+     - Age
+     - Gender
+     - First Name
+     - Last Name
+     - Email
+     - Password
+   - Users can log in using their **nickname or email** and password.
+   - A **logout** option is available on every page.
 
-## User Authentication
+2. **Posts and Comments** 📝:
+   - **Create Posts**: Users can create posts with categories.
+   - **Comment on Posts**: Users can comment on existing posts.
+   - **Feed Display**: Posts are displayed in a feed, and comments are visible only when a post is clicked.
 
-- Users can register by providing an email, username, and password.
-- Passwords are encrypted.
-- Users can log in using their credentials.
-- Use cookies to manage user sessions with an expiration date.
+3. **Private Messages** 💬:
+   - **Real-Time Chat**: Users can send private messages to each other in real-time using **WebSockets**.
+   - **Online/Offline Status**: A section displays users who are online/offline, organized by the last message sent or alphabetically.
+   - **Message History**: Users can view past messages and load older messages by scrolling up (10 messages at a time).
+   - **Message Format**: Messages include:
+     - Date and time sent.
+     - Sender's username.
 
-## Technology Stack
+4. **Space-Themed Design** 🪐:
+   - The forum features a **space-themed design** with cosmic visuals to enhance the user experience.
 
-### Backend
+---
 
-- Golang standard packages along with sqlite3, bcrypt and UUID.
-- Javascript
-- SQLite: Store and manage user data, posts, comments, likes, dislikes, and categories.
-- Docker: Containerize the application for consistent development and deployment
-  environments.
+## **Technologies Used** 🛠️
 
-### Frontend
+- **Frontend**:
+  - HTML for structuring the page.
+  - CSS for styling and space-themed visuals.
+  - JavaScript for handling DOM events and WebSocket communication.
+- **Backend**:
+  - Go (Golang) for backend logic and WebSocket handling.
+  - SQLite for database management.
+- **WebSockets**:
+  - Gorilla WebSocket for real-time communication.
+- **Authentication**:
+  - bcrypt for password hashing.
+  - Sessions and cookies for user authentication.
+- **Database**:
+  - SQLite for storing user data, posts, comments, and messages.
 
-HTML & CSS (No frontend libraries or frameworks)
+---
 
-## Usage
+## **How to Run the Project** 🏃‍♂️
 
-Run the build.sh script by executing the below command in a terminal
+### **Prerequisites**:
+- **Go** installed.
+- **SQLite** installed.
 
-```bash
-bash ./build.sh
-```
+### **Steps**:
 
-Once the build is completed successfully, verify if the container is running:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Mohamed-2196/real-time-forum.git
+   cd CosmicForum
+   ```
 
-```docker
-docker ps -a
-```
+2. **Set Up the Backend**:
+   - Navigate to the backend directory:
+     ```bash
+     cd backend
+     ```
+   - Install Go dependencies:
+     ```bash
+     go mod tidy
+     ```
+   - Run the backend server:
+     ```bash
+     go run main.go
+     ```
+     
+3. **Access the Application**:
+   - Open your browser and navigate to `http://localhost:8080`.
 
-Open a web browser of your choice and navigate to the below link:
+---
 
-`http://localhost:8080/`
+## **License** 📜
 
-## Authors
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- [nhussain](https://learn.reboot01.com/git/nhussain)
-- [yabuzuha](https://learn.reboot01.com/git/yabuzuha)
-- [etarada](https://learn.reboot01.com/git/etarada)
-- [fsayedsa](https://learn.reboot01.com/git/fsayedsa)
-- [mohakhalil](https://learn.reboot01.com/git/mohakhalil)
+---
+
+
+Join the cosmic community and explore the universe with **CosmicForum**! 🌌✨
